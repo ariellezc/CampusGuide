@@ -1,0 +1,7 @@
+from terminal run get-pip
+
+python [location]\get-pip.py
+
+Then
+
+python get-pip.py --user numpy
