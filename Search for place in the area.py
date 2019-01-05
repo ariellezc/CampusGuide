@@ -113,10 +113,12 @@ def placesearch(search):
                 else:
                     link = decodedWebData["results"][i]["photos"][0]["html_attributions"]
                     List.append("Link: " + str(link))
+                    
+                i+=1
                
-                for i in range(0,len(List)):
-                    final = final + "\n" + List[i]
-                i+=1 #increment by 1
+            for a in range(0,len(List)):
+                final = final + "\n" + List[a]
+                a+=1 #increment by 1
 
             return(final)
                 
